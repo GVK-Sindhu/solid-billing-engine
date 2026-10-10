@@ -1,0 +1,41 @@
+{
+  "name": "solid-billing-engine",
+  "version": "1.0.0",
+  "description": "Refactored Subscription Billing Engine using SOLID Principles and Hexagonal Architecture",
+  "main": "dist/api/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/api/server.js",
+    "dev": "ts-node src/api/server.ts",
+    "test": "jest tests/unit --colors",
+    "test:unit": "jest tests/unit --coverage --colors",
+    "test:integration": "jest tests/integration --runInBand --colors",
+    "test:coverage": "jest tests/unit --coverage --colors"
+  },
+  "keywords": [
+    "solid",
+    "hexagonal-architecture",
+    "ports-and-adapters",
+    "dependency-injection",
+    "refactoring"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "@types/pg": "^8.11.5",
+    "@types/supertest": "^6.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
